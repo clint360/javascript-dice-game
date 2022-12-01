@@ -16,10 +16,11 @@ body {
   font-weight: 400;
   height: 100vh;
   color: #333;
-  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  background-image: linear-gradient(to top left, #753682 0%, #000000 100%);
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: auto;
 }
 
 /* LAYOUT */
@@ -42,7 +43,7 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: all 0.75s;
+  transition: all 0.01s;
 }
 
 /* ELEMENTS */
@@ -78,12 +79,12 @@ main {
 }
 
 .current {
-  background-color: #c7365f;
+  background-color: #000000;
   opacity: 0.8;
   border-radius: 9px;
   color: #fff;
   width: 65%;
-  padding: 2rem;
+  padding: 1rem;
   text-align: center;
   transition: all 0.75s;
 }
@@ -104,14 +105,14 @@ main {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  color: #444;
+  color: rgb(0, 0, 0);
   background: none;
   border: none;
   font-family: inherit;
   font-size: 1.8rem;
   text-transform: uppercase;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: 700;
   transition: all 0.2s;
 
   background-color: white;
@@ -163,9 +164,12 @@ main {
 
 .player--winner .name {
   font-weight: 700;
-  color: #c7365f;
+  color: #000000;
 }
 
 .hidden {
   display: none;
+}
+ img {
+filter: (saturate(0%));
 }
